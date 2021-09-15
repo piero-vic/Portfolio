@@ -2,7 +2,9 @@ body {
   margin: 0;
   color: #fff;
   font-family: Poppins, sans-serif;
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .header-bar {
@@ -34,7 +36,7 @@ body {
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 24px;
 }
 
@@ -43,6 +45,7 @@ body {
   font-family: 'Crete Round', serif;
   font-size: 56px;
   margin: 0;
+  margin-top: 60px;
 }
 
 .section-subtitle {
@@ -53,4 +56,12 @@ body {
 
 .section-text {
   margin: 0;
+}
+
+#social-media {
+  margin: 20px 0;
+}
+
+.icon {
+  margin: 0 5px;
 }
