@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+.header-bar {
+  background-color: #3c3a39;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  margin: 25px;
+}
+
+.button-container {
+  margin: 25px;
+}
