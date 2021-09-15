@@ -1,9 +1,13 @@
 body {
   margin: 0;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 16px;
 }
 .header-bar {
   background-color: #3c3a39;
   position: sticky;
+  /* height: 92px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,9 +18,36 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+  font-size: 18px;
   margin: 25px;
 }
 
 .button-container {
   margin: 25px;
+}
+
+.hero {
+  background-color: #1c1a19;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+.section-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 56px;
+  margin: 0;
+}
+
+.section-subtitle {
+  color: #fff5e1;
+  font-size: 24px;
+  margin: 0;
+}
+
+.section-text {
+  margin: 0;
 }
