@@ -1,21 +1,21 @@
 body {
   margin: 0;
-  color: #ffffff;
-  font-family: Poppins;
+  color: #fff;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
 }
+
 .header-bar {
   background-color: #3c3a39;
   position: sticky;
-  /* height: 92px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-title {
-  color: #ffffff;
-  font-family: Roboto;
+  color: #fff;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
