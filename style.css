@@ -5,7 +5,7 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  background-color: #1c1a19
+  background-color: #1c1a19;
 }
 
 ul {
@@ -14,9 +14,9 @@ ul {
 }
 
 li {
-    display: block;
-    text-align: center;
-    font-size: 22px;
+  display: block;
+  text-align: center;
+  font-size: 22px;
 }
 
 .d-flex {
@@ -28,7 +28,7 @@ li {
   align-items: center;
 }
 
-.flex-column-between{
+.flex-column-between {
   flex-direction: column;
   justify-content: space-between;
 }
@@ -160,7 +160,6 @@ li {
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
   width: 327px;
-
 }
 
 .card-title {
@@ -202,7 +201,7 @@ li {
 }
 
 button {
-  font-family: Inter , sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -222,7 +221,7 @@ button:hover {
 
 button:active {
   color: #f4f1f0;
-  background-color: #E05304;
+  background-color: #e05304;
 }
 
 button:disabled {
@@ -249,8 +248,8 @@ button:disabled {
   font-size: 32px;
 }
 
-.list-item{
- margin: 20px 0;
+.list-item {
+  margin: 20px 0;
 }
 
 #skills-section {
@@ -259,17 +258,17 @@ button:disabled {
   align-items: center;
 }
 
-#languages::before{
+#languages::before {
   margin: 0 15px;
-  content: url("assets/diamond.svg")
+  content: url("assets/diamond.svg");
 }
 
-#frameworks::before{
+#frameworks::before {
   margin: 0 15px;
-  content: url("assets/square.svg")
+  content: url("assets/square.svg");
 }
 
-#skills::before{
+#skills::before {
   margin: 0 15px;
-  content: url("assets/circle.svg")
+  content: url("assets/circle.svg");
 }
