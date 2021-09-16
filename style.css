@@ -110,6 +110,7 @@ li {
 
 #work-section {
   display: grid;
+  justify-content: center;
   padding: 120px 0;
 }
 
@@ -118,12 +119,48 @@ li {
   color: #1c1a19;
 }
 
+.main-card {
+  color: #091e42;
+  flex-direction: column;
+  align-items: start;
+  margin: 24px;
+  width: 327px;
+}
+
+.main-card-title {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  margin: 24px 0 12px 0;
+}
+
+.main-card-text {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.main-tag-container {
+  display: flex;
+  margin: 12px 0 12px 0;
+}
+
+.main-card-tag {
+  color: #091e42;
+  border: 1px solid #8993a4;
+  font-size: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  margin-right: 12px;
+}
+
 .card {
   flex-direction: column;
   margin: 24px;
   padding-top: 84px;
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
+  width: 327px;
+
 }
 
 .card-title {
@@ -200,6 +237,7 @@ button:disabled {
 
 .dark-divider {
   border-top: 1px solid #212121;
+  margin: 24px 24px 24px 24px;
 }
 
 .grid-container {
