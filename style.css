@@ -108,6 +108,11 @@ li {
   background-color: #e5e5e5;
 }
 
+#work-section {
+  display: grid;
+  padding: 120px 0;
+}
+
 #work-title {
   font-size: 40px;
   color: #1c1a19;
@@ -115,7 +120,7 @@ li {
 
 .card {
   flex-direction: column;
-  margin: 0 24px;
+  margin: 24px;
   padding-top: 84px;
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
@@ -135,7 +140,7 @@ li {
 
 .tag-container {
   display: flex;
-  margin: 0 16px;
+  margin: 5px 16px 16px 16px;
 }
 
 .card-tag {
