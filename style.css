@@ -7,10 +7,18 @@ body {
   font-size: 15px;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .header-bar {
   background-color: #3c3a39;
   position: sticky;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -20,11 +28,12 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
+  text-decoration: none;
   font-size: 18px;
   margin: 25px;
 }
 
-.button-container {
+.nav-menu {
   margin: 25px;
 }
 
@@ -34,7 +43,6 @@ body {
   background-position: right bottom;
   background-color: #1c1a19;
   height: calc(100vh - 75px);
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 24px;
@@ -59,6 +67,7 @@ body {
 }
 
 #social-media {
+  justify-content: flex-start;
   margin: 20px 0;
 }
 
