@@ -89,6 +89,13 @@ ul {
   font-size: 72px;
 }
 
+#about-section {
+  height: 300vh;
+  background-image: url(assets/about-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right 21%;
+}
+
 button {
   font-family: Inter , sans-serif;
   font-style: normal;
@@ -116,4 +123,13 @@ button:active {
 button:disabled {
   color: #5b5957;
   background: #f4f1f0;
+}
+
+.divider {
+  align-self: center;
+  position: relative;
+  top:35vh;
+  margin: 0 24px;
+  border-top: 1px solid #fff;
+  width: 100%
 }
