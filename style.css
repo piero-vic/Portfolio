@@ -109,7 +109,7 @@ li {
 }
 
 .light-section {
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 #work-section {
@@ -128,6 +128,7 @@ li {
   color: #091e42;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 327px;
 }
 
 .main-card-img {
@@ -173,12 +174,13 @@ li {
 
 .card {
   flex-direction: column;
+  align-items: flex-start;
   margin-top: 24px;
   padding-top: 84px;
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
-  width: 327px;
-  max-width: 80%;
+  /* width: 327px; */
+  max-width: 327px;
 }
 
 .card-title {
@@ -207,6 +209,7 @@ li {
 
 .card-button {
   width: 100%;
+  max-width: 327px;
 }
 
 #about-title {
@@ -278,7 +281,6 @@ button:disabled {
 }
 
 #skills-section {
-  height: 170vh;
   flex-direction: column;
   align-items: center;
 }
