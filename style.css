@@ -136,8 +136,8 @@ li {
   align-self: center;
 }
 
-@media screen and (max-width: 380px){
-  #work-title{
+@media screen and (max-width: 380px) {
+  #work-title {
     font-size: 30px;
   }
 
@@ -179,7 +179,6 @@ li {
   padding-top: 84px;
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
-  /* width: 327px; */
   max-width: 327px;
 }
 
@@ -265,7 +264,6 @@ button:disabled {
 .grid-container {
   display: grid;
   grid-template-rows: auto auto auto;
-  /* word-wrap: break-word; */
 }
 
 .img-container {
