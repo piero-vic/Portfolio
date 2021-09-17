@@ -92,7 +92,7 @@ li {
 
 .section-text {
   margin: 0;
-  max-width: 327px
+  max-width: 327px;
 }
 
 @media screen and (max-width: 370px) {
