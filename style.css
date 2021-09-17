@@ -179,7 +179,9 @@ li {
   padding-top: 84px;
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 327px;
+  min-height: 274px;
 }
 
 .card-title {
@@ -196,14 +198,15 @@ li {
 
 .tag-container {
   display: flex;
-  margin: 5px 16px 16px 16px;
+  flex-wrap: wrap;
+  margin: 0 16px 16px 16px;
 }
 
 .card-tag {
   font-size: 15px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
-  margin-right: 12px;
+  margin: 12px 12px 0 0;
 }
 
 .card-button {
