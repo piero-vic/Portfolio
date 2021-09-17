@@ -101,11 +101,13 @@ li {
 
 #social-media {
   justify-content: flex-start;
-  margin: 20px 0;
+  margin: 0;
+  max-width: 50vw;
+  flex-wrap: wrap;
 }
 
 .icon {
-  margin: 0 5px;
+  margin: 20px 5px 0 5px;
 }
 
 .light-section {
