@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Porfolio</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header-bar d-flex">
       <a class="header-title" href="#">John Doe</a>
       <nav class="nav-menu">
         <a href="#"><img src="assets/hamburger.svg" alt=""></a>
       </nav>
     </header>
-    <section class="hero d-flex">
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="dark-section d-flex">
       <h1 class="section-title">Hey There.<br>I'm Alex</h1>
       <p class="section-subtitle">I'm a software developer</p>
       <p class="section-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -38,5 +41,148 @@
         </li>
       </ul>
     </section>
+
+    <!-- Works Section -->
+    <section id="work-section" class="light-section grid-container">
+      <h2 id="work-title" class="section-title">My Recent Works</h2>
+      <div class="dark-divider grid-item"></div>
+      <!-- Main Card -->
+      <div class="d-flex main-card">
+        <img class="main-card-img" src="assets/main-placeholder.jpeg" alt="">
+        <h3 class="main-card-title">Multi-Post Stories</h3>
+        <p class="main-card-text">
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+        </p>
+        <ul class="main-tag-container">
+          <li class="main-card-tag">css</li>
+          <li class="main-card-tag">html</li>
+          <li class="main-card-tag">bootstrap</li>
+          <li class="main-card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="main-card-buton" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+
+      <!-- Extra Cards -->
+      <div class="d-flex card">
+        <h3 class="card-title">Progfesional Art Printing Data</h3>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="tag-container">
+          <li class="card-tag">html</li>
+          <li class="card-tag">bootstrap</li>
+          <li class="card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card">
+        <h3 class="card-title">Progfesional Art Printing Data</h3>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="tag-container">
+          <li class="card-tag">html</li>
+          <li class="card-tag">bootstrap</li>
+          <li class="card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card">
+        <h3 class="card-title">Progfesional Art Printing Data</h3>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="tag-container">
+          <li class="card-tag">html</li>
+          <li class="card-tag">bootstrap</li>
+          <li class="card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card">
+        <h3 class="card-title">Progfesional Art Printing Data</h3>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="tag-container">
+          <li class="card-tag">html</li>
+          <li class="card-tag">bootstrap</li>
+          <li class="card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card">
+        <h3 class="card-title">Progfesional Art Printing Data</h3>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="tag-container">
+          <li class="card-tag">html</li>
+          <li class="card-tag">bootstrap</li>
+          <li class="card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card">
+        <h3 class="card-title">Progfesional Art Printing Data</h3>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="tag-container">
+          <li class="card-tag">html</li>
+          <li class="card-tag">bootstrap</li>
+          <li class="card-tag">Ruby</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.location.href='#';">
+          See Project
+        </button>
+      </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="dark-section d-flex">
+      <h2 id="about-title" class="section-title">About me</h2>
+      <p class="section-text margin-tb">Hello, I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <button type="button" onclick="window.location.href='#';">
+        Get My Resume
+      </button>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <ul id="skills-section" class="d-flex dark-section">
+      <li class="d-flex flex-column-center">
+        <h3 id="languages" class="list-title">Languages</h3>
+        <ul>
+          <li class="list-item">Javascript</li>
+          <li class="list-item">Ruby</li>
+          <li class="list-item">Html</li>
+          <li class="list-item">CSS</li>
+        </ul>
+      </li>
+      <li class="d-flex flex-column-center">
+        <h3 id="frameworks" class="list-title">Frameworks</h3>
+        <ul>
+          <li class="list-item">Bootstrap</li>
+          <li class="list-item">Ruby on Rails</li>
+          <li class="list-item">RSPec</li>
+          <li class="list-item">CapyBara</li>
+          <li class="list-item">Selenium</li>
+        </ul>
+      </li>
+      <li class="d-flex flex-column-center">
+        <h3 id="skills" class="list-title">Skills</h3>
+        <ul>
+          <li class="list-item">CodeKit</li>
+          <li class="list-item">GitHub</li>
+          <li class="list-item">Codepen</li>
+          <li class="list-item">Gitlab</li>
+          <li class="list-item">Terminal</li>
+        </ul>
+      </li>
+    </ul>
+
   </body>
 </html>
