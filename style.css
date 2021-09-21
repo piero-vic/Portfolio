@@ -331,4 +331,30 @@ textarea {
   width: calc(100% - 24px);
   background-color: #FBF8F7;
   padding: 12px;
+  border: none;
+  
+}
+
+input {
+  border: none;
+  padding: 14px;
+  margin:10px;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid #DFE1E6;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-icon { 
+  flex-wrap: nowrap;
 }
