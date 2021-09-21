@@ -334,7 +334,7 @@ textarea {
   color: #3c3a39;
   width: calc(100% - 24px);
   height: 114px;
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   padding: 12px;
   border: none;
   margin-bottom: 24px;
@@ -364,7 +364,7 @@ input::placeholder {
 }
 
 footer {
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
