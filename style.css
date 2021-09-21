@@ -333,6 +333,7 @@ textarea {
   font-size: 15px;
   color: #3c3a39;
   width: calc(100% - 24px);
+  height: 114px;
   background-color: #FBF8F7;
   padding: 12px;
   border: none;
@@ -371,5 +372,4 @@ footer {
 
 .footer-icon {
   flex-wrap: nowrap;
-  filter: invert(35%) sepia(4%) saturate(3202%) hue-rotate(179deg) brightness(100%) contrast(89%);
 }
