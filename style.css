@@ -23,6 +23,10 @@ li {
   display: flex;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .flex-row-center {
   flex-direction: column;
   justify-content: center;
@@ -332,14 +336,24 @@ textarea {
   background-color: #FBF8F7;
   padding: 12px;
   border: none;
-  
+  margin-bottom: 24px;
 }
 
 input {
   border: none;
   padding: 14px;
-  margin:10px;
   border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 24px;
+}
+
+input::placeholder {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+}
+
+.form-btn {
+  max-width: 131px;
+  align-self: center;
 }
 
 .form-container {
@@ -352,9 +366,10 @@ footer {
   border-top: 1px solid #DFE1E6;
   display: flex;
   justify-content: center;
-
+  padding-bottom: 24px;
 }
 
-.footer-icon { 
+.footer-icon {
   flex-wrap: nowrap;
+  filter: invert(35%) sepia(4%) saturate(3202%) hue-rotate(179deg) brightness(100%) contrast(89%);
 }
