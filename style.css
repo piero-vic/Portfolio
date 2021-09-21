@@ -95,6 +95,15 @@ li {
   max-width: 327px;
 }
 
+.light-section-text {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
 @media screen and (max-width: 370px) {
   .section-text {
     margin: 0;
@@ -309,4 +318,8 @@ button:disabled {
 #skills::before {
   margin: 0 15px;
   content: url("assets/circle.svg");
+}
+
+#contact-section {
+  padding: 120px 24px;
 }
