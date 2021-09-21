@@ -323,3 +323,12 @@ button:disabled {
 #contact-section {
   padding: 120px 24px;
 }
+
+textarea {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  color: #3c3a39;
+  width: calc(100% - 24px);
+  background-color: #FBF8F7;
+  padding: 12px;
+}
