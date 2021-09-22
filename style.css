@@ -374,8 +374,26 @@ footer {
   flex-wrap: nowrap;
 }
 
-/* Contact Section Media Queries */
 @media screen and (min-width: 768px) {
+  /* Hero Section Media Queries */
+  #hero-section {
+    height: calc(100vh - 360px);
+    padding: 120px 140px 240px 140px;
+    background-image: url(assets/hero-illustration-desk.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom%;
+    background-size: 45%;
+  }
+
+  /* About Section Media Queries */
+  #about-section {
+    padding: 120px 140px;
+    background-image: url(assets/about-illustration-desk.svg);
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    background-size: 50%;
+  }
+
   /* Skills Section Media Queries */
   #skills-section {
     grid-template-columns: 1fr 1fr 1fr;
