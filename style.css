@@ -281,7 +281,7 @@ button:disabled {
 }
 
 .dark-divider {
-  max-width: 100%;
+  min-width: 100%;
   border-top: 1px solid #212121;
   margin: 24px 24px 24px 24px;
 }
@@ -383,6 +383,22 @@ footer {
     background-repeat: no-repeat;
     background-position: right bottom%;
     background-size: 45%;
+  }
+
+  /* About Section Media Queries */
+  #work-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .dark-divider {
+    grid-column: 2 / span 2;
+  }
+
+  .main-card {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
   }
 
   /* About Section Media Queries */
