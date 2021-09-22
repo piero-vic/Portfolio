@@ -288,7 +288,8 @@ button:disabled {
 
 .grid-container {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .img-container {
@@ -375,11 +376,13 @@ footer {
 
 /* Contact Section Media Queries */
 @media screen and (min-width: 768px) {
-  .light-section {
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 24px;
+  /* Skills Section Media Queries */
+  #skills-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
   }
 
+  /* Contact Section Media Queries */
   .light-section-text {
     margin: 0;
     text-align: left;
@@ -391,6 +394,8 @@ footer {
 
   #contact-section {
     padding: 120px 140px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 24px;
   }
 
   .contact-grid-item-1 {
