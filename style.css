@@ -182,7 +182,6 @@ li {
 }
 
 .main-tag-container {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -372,4 +371,34 @@ footer {
 
 .footer-icon {
   flex-wrap: nowrap;
+}
+
+/* Contact Section Media Queries */
+@media screen and (min-width: 768px) {
+  .light-section {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 24px;
+  }
+
+  .light-section-text {
+    margin: 0;
+    text-align: left;
+  }
+
+  .form-btn {
+    align-self: flex-start;
+  }
+
+  #contact-section {
+    padding: 120px 140px;
+  }
+
+  .contact-grid-item-1 {
+    grid-column: 1 / span 1;
+  }
+
+  .contact-grid-item-2 {
+    grid-column: 2 / span 1;
+
+  }
 }
