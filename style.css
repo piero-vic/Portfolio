@@ -395,11 +395,12 @@ footer {
 
   /* About Section Media Queries */
   #work-section {
-    padding: 120px 140px 24px 140px;
+    padding: 120px 140px 130px 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    grid-gap: 24px;
   }
 
   .dark-divider {
@@ -414,10 +415,12 @@ footer {
     min-width: 100%;
     align-content: center;
     padding-top: 90px;
+    grid-gap: 24px;
   }
 
   .main-card-img {
     min-width: 35vw;
+    max-width: 100%;
   }
 
   .main-card-title {
