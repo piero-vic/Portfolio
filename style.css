@@ -125,10 +125,11 @@ li {
   margin: 0;
   max-width: 50vw;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .icon {
-  margin: 20px 5px 0 5px;
+  margin: 0 5px;
 }
 
 .light-section {
@@ -383,6 +384,13 @@ footer {
     background-repeat: no-repeat;
     background-position: right bottom%;
     background-size: 45%;
+  }
+
+  #social-media {
+    position: absolute;
+    flex-direction: column;
+    left: 36px;
+    top: 250px;
   }
 
   /* About Section Media Queries */
