@@ -23,6 +23,10 @@ li {
   display: flex;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .flex-row-center {
   flex-direction: column;
   justify-content: center;
@@ -93,6 +97,15 @@ li {
 .section-text {
   margin: 0;
   max-width: 327px;
+}
+
+.light-section-text {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
 }
 
 @media screen and (max-width: 370px) {
@@ -309,4 +322,54 @@ button:disabled {
 #skills::before {
   margin: 0 15px;
   content: url("assets/circle.svg");
+}
+
+#contact-section {
+  padding: 120px 24px;
+}
+
+textarea {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  color: #3c3a39;
+  width: calc(100% - 24px);
+  height: 114px;
+  background-color: #fbf8f7;
+  padding: 12px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+input {
+  border: none;
+  padding: 14px;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 24px;
+}
+
+input::placeholder {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+}
+
+.form-btn {
+  max-width: 131px;
+  align-self: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.footer-icon {
+  flex-wrap: nowrap;
 }
