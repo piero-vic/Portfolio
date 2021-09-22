@@ -149,8 +149,8 @@ li {
 
 .main-card {
   color: #091e42;
-  flex-direction: column;
-  align-items: flex-start;
+  /* flex-direction: column;
+  align-items: flex-start; */
   max-width: 327px;
 }
 
@@ -387,18 +387,33 @@ footer {
 
   /* About Section Media Queries */
   #work-section {
+    padding: 120px 140px 24px 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    align-items: center;
   }
 
   .dark-divider {
     grid-column: 2 / span 2;
+    height: 0;
   }
 
   .main-card {
     grid-row: 2 / span 1;
     grid-column: 1 / span 3;
+    grid-template-columns: 6fr 4fr;
+    min-width: 100%;
+    align-content: center;
+    padding-top: 90px;
+  }
+
+  .main-card-img {
+    min-width: 35vw;
+  }
+
+  .main-card-title {
+    margin-top: 0;
   }
 
   /* About Section Media Queries */
