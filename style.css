@@ -40,6 +40,8 @@ button {
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
   padding: 12px;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
 }
 
 button:hover {
