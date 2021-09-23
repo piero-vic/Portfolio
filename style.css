@@ -5,11 +5,14 @@ body {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #1c1a19;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -83,7 +86,6 @@ footer {
   padding: 24px;
 }
 
-
 /* LAYOUT RULES */
 .d-flex {
   display: flex;
@@ -94,6 +96,7 @@ footer {
 }
 
 /* SECTIONS */
+
 /* General */
 .dark-section {
   background-color: #1c1a19;
@@ -125,14 +128,11 @@ footer {
   font-size: 18px;
 }
 
-.nav-menu {
-}
-
 /* Hero */
 #hero-section {
   background-image: url(assets/hero-illustration.svg);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right 120%;
   gap: 12px;
 }
 
@@ -145,14 +145,13 @@ footer {
 }
 
 .section-subtitle {
-  font-family: Roboto;
   color: #fff5e1;
   font-size: 24px;
 }
 
 .section-text {
-  font-family: Poppins, serif;
   max-width: 327px;
+  line-height: 24px;
 }
 
 /* Works */
@@ -183,49 +182,45 @@ footer {
 #work-section {
   padding: 120px 24px;
   justify-content: center;
+  grid-gap: 24px;
 }
 
 #work-title {
+  grid-column: 1 / span 1;
   font-size: 40px;
-  color: #1c1a19;
-  margin: 24px 0;
+  color: #091e42;
   text-align: center;
 }
 
 .main-card {
   color: #091e42;
-  max-width: 327px;
+  grid-gap: 24px;
+  margin-top: 56px;
+}
+
+.main-card-text-container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .main-card-img {
-  max-width: 327px;
+  max-width: 100%;
   align-self: center;
-}
-
-@media screen and (max-width: 380px) {
-  #work-title {
-    font-size: 30px;
-  }
-
-  .main-card-img {
-    max-width: 85vw;
-  }
 }
 
 .main-card-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
-  margin: 24px 0 12px 0;
 }
 
 .main-card-text {
   font-family: Inter, sans-serif;
-  font-size: 16px;
-  margin: 0;
 }
 
 .main-tag-container {
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .main-card-tag {
@@ -234,13 +229,11 @@ footer {
   font-size: 15px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
-  margin: 12px 12px 0 0;
 }
 
 .card {
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 24px;
   padding-top: 84px;
   background-image: url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
@@ -257,7 +250,6 @@ footer {
 
 .card-text {
   font-family: Inter, sans-serif;
-  font-size: 16px;
   margin: 0 16px;
 }
 
@@ -308,7 +300,6 @@ footer {
 .dark-divider {
   min-width: 100%;
   border-top: 1px solid #212121;
-  margin: 24px;
 }
 
 .img-container {
@@ -379,12 +370,11 @@ footer {
 
   /* Hero Section Media Queries */
   #hero-section {
-    height: calc(100vh - 360px);
-    padding: 120px 140px 240px 140px;
+    padding: 120px 140px 250px 140px;
     background-image: url(assets/hero-illustration-desk.svg);
     background-repeat: no-repeat;
-    background-position: right bottom%;
-    background-size: 45%;
+    background-position: right bottom;
+    background-size: 40%;
   }
 
   .hero-social-media {
@@ -393,6 +383,16 @@ footer {
     left: 36px;
     top: 250px;
     gap: 5px;
+  }
+
+  .section-subtitle {
+    font-size: 32px;
+  }
+
+  .section-text {
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   /* About Section Media Queries */
@@ -416,12 +416,15 @@ footer {
     grid-template-columns: 6fr 4fr;
     min-width: 100%;
     align-content: center;
-    padding-top: 90px;
-    grid-gap: 24px;
+    margin-top: 90px;
+  }
+
+  .main-card-text-container {
+    flex-direction: column;
+    gap: 24px;
   }
 
   .main-card-img {
-    min-width: 35vw;
     max-width: 100%;
   }
 
@@ -429,9 +432,13 @@ footer {
     margin-top: 0;
   }
 
+  .main-card-tag {
+    padding: 10px 12px;
+  }
+
   /* About Section Media Queries */
   #about-section {
-    padding: 120px 140px;
+    padding: 120px 140px 140px 140px;
     background-image: url(assets/about-illustration-desk.svg);
     background-repeat: no-repeat;
     background-position: right 50%;
