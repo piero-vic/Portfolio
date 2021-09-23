@@ -14,12 +14,26 @@
     <header class="header-bar d-flex">
       <a class="header-title" href="#">John Doe</a>
       <nav class="nav-menu">
-        <a href="#"><img src="assets/hamburger.svg" alt=""></a>
+        <a class="menu-button" href="#"><img src="assets/hamburger.svg" alt=""></a>
+        <ul class="nav-list">
+          <li>
+            <a href="#work-section">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-section">About</a>
+          </li>
+          <li>
+            <a href="#contact-section">Contacts</a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/mail.svg" alt=""></a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero-section" class="dark-section d-flex">
+    <section class="padding-section d-flex dark-section hero-section">
       <h1 class="section-title">Hey There.<br>I'm Alex</h1>
       <p class="section-subtitle">I'm a software developer</p>
       <p class="section-text hero-section-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -43,7 +57,7 @@
     </section>
 
     <!-- Works Section -->
-    <section id="work-section" class="light-section d-grid">
+    <section id="work-section" class="padding-section light-section d-grid">
       <h2 id="work-title" class="section-title">My Recent Works</h2>
       <div class="dark-divider"></div>
 
@@ -144,7 +158,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about-section" class="dark-section d-flex">
+    <section id="about-section" class="padding-section dark-section d-flex">
       <h2 id="about-title" class="section-title">About me</h2>
       <p class="section-text">Hello, I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
       <button type="button" onclick="window.location.href='#';">
@@ -155,7 +169,7 @@
     <div class="divider"></div>
 
     <!-- Skills Section -->
-    <ul id="skills-section" class="d-grid">
+    <ul id="skills-section" class="padding-section d-grid">
       <li class="d-grid skills-item">
         <h3 id="languages" class="list-title">Languages</h3>
         <ul class="skills-list">
@@ -188,7 +202,7 @@
     </ul>
 
     <!-- Contact Section -->
-    <section id="contact-section" class="light-section d-grid">
+    <section id="contact-section" class="padding-section light-section d-grid">
       <h3 class="light-section-text contact-grid-item-1">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </h3>

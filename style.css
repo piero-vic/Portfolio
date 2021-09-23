@@ -24,19 +24,20 @@ ul {
 
 li {
   text-align: center;
-  font-size: 22px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 button {
-  font-family: Inter, sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
   text-decoration: none;
   background-color: #ff6b00;
-  border: none;
   border: 1px solid #ff6b00;
   padding: 12px;
 }
@@ -49,11 +50,13 @@ button:hover {
 
 button:active {
   color: #f4f1f0;
+  border: none;
   background-color: #e05304;
 }
 
 button:disabled {
   color: #5b5957;
+  border: none;
   background: #f4f1f0;
 }
 
@@ -95,15 +98,17 @@ footer {
   display: grid;
 }
 
+.padding-section {
+  padding: 120px 24px;
+}
+
 /* SECTIONS */
 
 /* General */
 .dark-section {
-  background-color: #1c1a19;
   flex-direction: column;
   justify-content: flex-start;
   align-items: baseline;
-  padding: 120px 24px;
 }
 
 .light-section {
@@ -121,15 +126,17 @@ footer {
 
 .header-title {
   color: #fff;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;
 }
 
+.nav-list {
+  display: none;
+}
+
 /* Hero */
-#hero-section {
+.hero-section {
   background-image: url(assets/hero-illustration.svg);
   background-repeat: no-repeat;
   background-position: right 120%;
@@ -150,7 +157,7 @@ footer {
 }
 
 .section-text {
-  max-width: 327px;
+  max-width: 100%;
   line-height: 24px;
 }
 
@@ -180,8 +187,8 @@ footer {
 }
 
 #work-section {
-  padding: 120px 24px;
   justify-content: center;
+  justify-items: center;
   grid-gap: 24px;
 }
 
@@ -313,6 +320,7 @@ footer {
 }
 
 .skills-list {
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -325,7 +333,6 @@ footer {
 #skills-section {
   grid-template-columns: 1fr;
   background-color: #1c1a19;
-  padding: 120px 24px;
   grid-gap: 44px;
 }
 
@@ -346,7 +353,6 @@ footer {
 
 /* Contact */
 #contact-section {
-  padding: 120px 24px;
   grid-gap: 24px;
 }
 
@@ -364,12 +370,25 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
+  /* Header Section Media Queries */
   .header-bar {
     padding: 24px 140px;
   }
 
+  .menu-button {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
   /* Hero Section Media Queries */
-  #hero-section {
+  .hero-section {
     padding: 120px 140px 250px 140px;
     background-image: url(assets/hero-illustration-desk.svg);
     background-repeat: no-repeat;
@@ -400,7 +419,6 @@ footer {
     padding: 120px 140px 130px 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
     align-items: center;
     grid-gap: 24px;
   }
