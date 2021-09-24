@@ -34,7 +34,6 @@ a {
 button {
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
   color: #fff;
   text-decoration: none;
   background-color: #ff6b00;
@@ -203,6 +202,7 @@ footer {
   color: #091e42;
   grid-gap: 24px;
   margin-top: 56px;
+  justify-items: center;
 }
 
 .main-card-text-container {
@@ -361,7 +361,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   /* Header Section Media Queries */
   .header-bar {
     padding: 24px 140px;
@@ -444,6 +444,28 @@ footer {
 
   .main-card-tag {
     padding: 10px 12px;
+  }
+
+  .card {
+    justify-content: flex-end;
+  }
+
+  .card-button {
+    display: none;
+  }
+
+  .card:hover {
+    border: 1px solid black;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0) 84%), url(assets/placeholder.jpeg);
+  }
+
+  .card:hover>* {
+    opacity: 0;
+  }
+
+  .card:hover .card-button {
+    opacity: 1.0;
+    display: block;
   }
 
   /* About Section Media Queries */
