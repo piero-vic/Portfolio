@@ -242,7 +242,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 84px;
-  background:linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(assets/placeholder.jpeg);
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 327px;
@@ -459,12 +459,12 @@ footer {
     background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0) 84%), url(assets/placeholder.jpeg);
   }
 
-  .card:hover>* {
+  .card:hover > * {
     opacity: 0;
   }
 
   .card:hover .card-button {
-    opacity: 1.0;
+    opacity: 1;
     display: block;
   }
 
