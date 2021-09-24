@@ -1,4 +1,8 @@
 /* BASE RULES */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: #fff;
@@ -39,6 +43,7 @@ button {
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
   padding: 12px;
+  transition: background-color 0.5s;
 }
 
 button:hover {
@@ -132,6 +137,14 @@ footer {
 
 .nav-list {
   display: none;
+}
+
+.nav-link {
+  transition: color 1s;
+}
+
+.nav-link:hover {
+  color: #ff6b00;
 }
 
 /* Hero */
