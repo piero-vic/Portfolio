@@ -135,6 +135,14 @@ footer {
   display: none;
 }
 
+.nav-link {
+  transition: color 1s;
+}
+
+.nav-link:hover {
+  color: #ff6b00;
+}
+
 /* Hero */
 .hero-section {
   background-image: url(assets/hero-illustration.svg);
