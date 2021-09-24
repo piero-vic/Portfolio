@@ -241,11 +241,12 @@ footer {
 .card {
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-end;
   padding-top: 84px;
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 327px;
+  max-width: 100%;
   min-height: 274px;
 }
 
@@ -275,7 +276,6 @@ footer {
 
 .card-button {
   width: 100%;
-  max-width: 327px;
 }
 
 /* About */
@@ -446,10 +446,6 @@ footer {
     padding: 10px 12px;
   }
 
-  .card {
-    justify-content: flex-end;
-  }
-
   .card-button {
     display: none;
   }
@@ -457,6 +453,8 @@ footer {
   .card:hover {
     border: 1px solid black;
     background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0) 84%), url(assets/placeholder.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card:hover > * {
