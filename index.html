@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Porfolio</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <!-- Header Section -->
     <header class="header-bar d-flex">
-      <a class="header-title" href="#">John Doe</a>
+      <a class="header-title" href="#">Piero Lescano</a>
       <nav class="nav-menu">
         <a class="menu-button" href="#"><img src="assets/hamburger.svg" alt=""></a>
         <ul class="nav-list">
@@ -23,7 +23,7 @@
             <a class="nav-link" href="#about-section">About</a>
           </li>
           <li>
-            <a class="nav-link" href="#contact-section">Contacts</a>
+            <a class="nav-link" href="#contact-section">Contact</a>
           </li>
           <li>
             <a href="#"><img src="assets/mail.svg" alt=""></a>
@@ -34,25 +34,25 @@
 
     <!-- Hero Section -->
     <section class="padding-section d-flex dark-section hero-section">
-      <h1 class="section-title">Hey There.<br>I'm Alex</h1>
+      <h1 class="section-title">Hey There.<br>I'm Piero</h1>
       <p class="section-subtitle">I'm a software developer</p>
-      <p class="section-text hero-section-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <p class="section-text hero-section-text">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
       <ul class="d-flex social-media hero-social-media">
         <li>
-          <a href="#"><img class="" src="assets/Github.svg" alt=""></a>
+          <a rel="noreferrer noopener" href="https://github.com/piero-vic" target="_blank"><img class="" src="assets/github.svg" alt=""></a>
         </li>
         <li>
-          <a href="#"><img class="" src="assets/Linkedin.svg" alt=""></a>
+          <a rel="noreferrer noopener" href="https://linkedin.com/in/piero-lescano" target="_blank"><img class="" src="assets/linkedin.svg" alt=""></a>
         </li>
+        <!-- <li>
+          <a href="#"><img class="" src="assets/angelist.svg" alt=""></a>
+        </li> -->
         <li>
-          <a href="#"><img class="" src="assets/Angelist.svg" alt=""></a>
+          <a rel="noreferrer noopener" href="https://twitter.com/v1ccenzo" target="_blank"><img class="" src="assets/twitter.svg" alt=""></a>
         </li>
-        <li>
-          <a href="#"><img class="" src="assets/Twitter.svg" alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img class="" src="assets/Medium.svg" alt=""></a>
-        </li>
+        <!-- <li>
+          <a href="#"><img class="" src="assets/medium.svg" alt=""></a>
+        </li> -->
       </ul>
     </section>
 
@@ -63,26 +63,64 @@
 
       <!-- Main Card -->
       <div class="d-grid main-card">
-        <img class="main-card-img" src="assets/main-placeholder-desk.jpeg" alt="">
+        <img class="main-card-img" src="desktop-screenshot.png" alt="">
         <div class="d-flex main-card-text-container">
-          <h3 class="main-card-title">Multi-Post Stories</h3>
+          <h3 class="main-card-title">Portfolio Website</h3>
           <p class="main-card-text">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+            Portfolio website to showcase my work.<br>
+            Code is on GitHub. Feel free to check it out.
           </p>
           <ul class="d-flex main-tag-container">
-            <li class="main-card-tag">css</li>
-            <li class="main-card-tag">html</li>
-            <li class="main-card-tag">bootstrap</li>
-            <li class="main-card-tag">Ruby</li>
+            <li class="main-card-tag">HTML</li>
+            <li class="main-card-tag">CSS</li>
           </ul>
-          <button type="button" class="main-card-button" onclick="window.location.href='#';">
+          <button type="button" class="main-card-button" onclick="window.open('https://github.com/piero-vic/Portfolio', '_black')">
             See Project
           </button>
         </div>
       </div>
 
       <!-- Extra Cards -->
-      <div class="d-flex card">
+      <div class="d-flex card card-1">
+        <h3 class="card-title">crypto-prices</h3>
+        <p class="card-text">A script that requests crypto prices from CoinGecko and writes them to a file in the format required by the Ledger CLI price history.</p>
+        <ul class="tag-container">
+          <li class="card-tag">Python</li>
+          <li class="card-tag">Ledger CLI</li>
+          <li class="card-tag">CoinGecko API</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.open('https://github.com/piero-vic/crypto-prices', '_black')">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card card-2">
+        <h3 class="card-title">bootstrap-website</h3>
+        <p class="card-text">
+          Basic presentation website.<br>
+          Made with Bootstrap.
+        </p>
+        <ul class="tag-container">
+          <li class="card-tag">HTML</li>
+          <li class="card-tag">Bootstrap</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.open('https://github.com/piero-vic/bootstrap-website', '_black')">
+          See Project
+        </button>
+      </div>
+      <div class="d-flex card card-3">
+        <h3 class="card-title">Patches:A Collection of VCV Rack Patches</h3>
+        <p class="card-text">
+          VCV Rack is a virtual modular synthesizer.<br>
+          All preset are text files in JSON format so they work great with version control.</p>
+        <ul class="tag-container">
+          <li class="card-tag">JSON</li>
+          <li class="card-tag">VCV Rack</li>
+        </ul>
+        <button type="button" class="card-button" onclick="window.open('https://github.com/piero-vic/patches', '_blank')">
+          See Project
+        </button>
+      </div>
+      <!-- <div class="d-flex card">
         <h3 class="card-title">Profesional Art Printing Data</h3>
         <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="tag-container">
@@ -117,51 +155,19 @@
         <button type="button" class="card-button" onclick="window.location.href='#';">
           See Project
         </button>
-      </div>
-      <div class="d-flex card">
-        <h3 class="card-title">Profesional Art Printing Data</h3>
-        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="tag-container">
-          <li class="card-tag">html</li>
-          <li class="card-tag">bootstrap</li>
-          <li class="card-tag">Ruby</li>
-        </ul>
-        <button type="button" class="card-button" onclick="window.location.href='#';">
-          See Project
-        </button>
-      </div>
-      <div class="d-flex card">
-        <h3 class="card-title">Profesional Art Printing Data</h3>
-        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="tag-container">
-          <li class="card-tag">html</li>
-          <li class="card-tag">bootstrap</li>
-          <li class="card-tag">Ruby</li>
-        </ul>
-        <button type="button" class="card-button" onclick="window.location.href='#';">
-          See Project
-        </button>
-      </div>
-      <div class="d-flex card">
-        <h3 class="card-title">Profesional Art Printing Data</h3>
-        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="tag-container">
-          <li class="card-tag">html</li>
-          <li class="card-tag">bootstrap</li>
-          <li class="card-tag">Ruby</li>
-        </ul>
-        <button type="button" class="card-button" onclick="window.location.href='#';">
-          See Project
-        </button>
-      </div>
+      </div> -->
 
     </section>
 
     <!-- About Section -->
     <section id="about-section" class="padding-section dark-section d-flex">
       <h2 id="about-title" class="section-title">About me</h2>
-      <p class="section-text">Hello, I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-      <button type="button" onclick="window.location.href='#';">
+      <p class="section-text">
+        Hello, I'm a software developer from Peru!<br>
+        I can help you build a product, feature or website.<br>
+        Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+      <button type="button" onclick="window.open('https://github.com/piero-vic', '_blank')">
         Get My Resume
       </button>
     </section>
@@ -173,9 +179,9 @@
       <li class="d-grid skills-item">
         <h3 id="languages" class="list-title">Languages</h3>
         <ul class="skills-list">
-          <li class="">Javascript</li>
-          <li class="">Ruby</li>
-          <li class="">Html</li>
+          <li class="">Python</li>
+          <li class="">JavaScript</li>
+          <li class="">HTML</li>
           <li class="">CSS</li>
         </ul>
       </li>
@@ -183,19 +189,19 @@
         <h3 id="frameworks" class="list-title">Frameworks</h3>
         <ul class="skills-list">
           <li class="">Bootstrap</li>
-          <li class="">Ruby on Rails</li>
+          <!-- <li class="">Ruby on Rails</li>
           <li class="">RSPec</li>
           <li class="">CapyBara</li>
-          <li class="">Selenium</li>
+          <li class="">Selenium</li> -->
         </ul>
       </li>
       <li class="d-grid skills-item">
         <h3 id="skills" class="list-title">Skills</h3>
         <ul class="skills-list">
-          <li class="">CodeKit</li>
+          <!-- <li class="">CodeKit</li> -->
           <li class="">GitHub</li>
-          <li class="">Codepen</li>
-          <li class="">Gitlab</li>
+          <!-- <li class="">Codepen</li> -->
+          <!-- <li class="">Gitlab</li> -->
           <li class="">Terminal</li>
         </ul>
       </li>
@@ -218,20 +224,20 @@
     <footer class="light-section">
       <ul class="d-flex social-media">
         <li>
-          <a href="#"><img class="" src="assets/github-dark.svg" alt=""></a>
+          <a rel="noreferrer noopener" href="https://github.com/piero-vic" target="_blank"><img class="" src="assets/github-dark.svg" alt=""></a>
         </li>
         <li>
-          <a href="#"><img class="" src="assets/linkedin-dark.svg" alt=""></a>
+          <a rel="noreferrer noopener" href="https://linkedin.com/in/piero-lescano" target="_blank"><img class="" src="assets/linkedin-dark.svg" alt=""></a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#"><img class="" src="assets/angelist-dark.svg" alt=""></a>
-        </li>
+        </li> -->
         <li>
-          <a href="#"><img class="" src="assets/twitter-dark.svg" alt=""></a>
+          <a rel="noreferrer noopener" href="https://twitter.com/v1ccenzo" target="_blank"><img class="" src="assets/twitter-dark.svg" alt=""></a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#"><img class="" src="assets/medium-dark.svg" alt=""></a>
-        </li>
+        </li> -->
       </ul>
     </footer>
 

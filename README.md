@@ -2,9 +2,9 @@
 
 # Porfolio
 
-> This repository contains the HTML and CSS code for a portfolio website. I'm at the mobile stage of the development.
+> This repository contains the HTML and CSS code for my portfolio website.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./desktop-screenshot.png)
 
 ## Built With
 
@@ -12,7 +12,7 @@
 - CSS
 
 ## Live Demo
-[Live Demo Link](https://htmlpreview.github.io/?https://github.com/piero-vic/Portfolio/blob/main/index.html)
+[Live Demo Link](https://piero-vic.github.io/Portfolio/)
 
 ## Author(s)
 
