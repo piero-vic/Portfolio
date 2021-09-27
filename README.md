@@ -2,9 +2,9 @@
 
 # Porfolio
 
-> This repository contains the HTML and CSS code for a portfolio website. I'm at the mobile stage of the development.
+> This repository contains the HTML and CSS code for my portfolio website.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./desktop-screenshot.png)
 
 ## Built With
 
