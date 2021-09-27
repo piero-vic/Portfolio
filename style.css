@@ -225,6 +225,7 @@ footer {
 }
 
 .main-card-img {
+  border-radius: 10px;
   max-width: 100%;
   align-self: center;
 }
@@ -259,7 +260,7 @@ footer {
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(assets/placeholder.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  min-width: 100%;
   min-height: 274px;
 }
 
