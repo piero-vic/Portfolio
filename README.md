@@ -12,7 +12,7 @@
 - CSS
 
 ## Live Demo
-[Live Demo Link](https://htmlpreview.github.io/?https://github.com/piero-vic/Portfolio/blob/main/index.html)
+[Live Demo Link](https://piero-vic.github.io/Portfolio/)
 
 ## Author(s)
 
