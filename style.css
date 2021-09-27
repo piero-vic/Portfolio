@@ -472,7 +472,7 @@ footer {
   }
 
   .card:hover > * {
-    opacity: 0;
+    display: none;
   }
 
   .card:hover .card-button {
