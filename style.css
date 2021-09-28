@@ -207,12 +207,15 @@ footer {
   from {
     transform: rotate(0deg);
   }
+
   33% {
     transform: rotate(-8deg);
   }
+
   66% {
     transform: rotate(8deg);
   }
+
   to {
     transform: rotate(0deg);
   }
@@ -221,7 +224,6 @@ footer {
 .icon-link:hover {
   animation-duration: 0.2s;
   animation-name: rotate;
-  /* animation-iteration-count: infinite; */
   animation-timing-function: linear;
 }
 
