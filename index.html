@@ -173,9 +173,12 @@
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </h3>
       <form class="form-container contact-grid-item-2" action="https://formspree.io/f/meqvnpbl" method="post">
-        <input type="text" name="Name" maxlength="30" placeholder="Full name" required>
-        <input type="email" name="Email" placeholder="Email" required>
-        <textarea name="Message" maxlength="500" placeholder="Enter text here" required></textarea>
+        <label for="name">Full name</label>
+        <input id="name" type="text" name="Name" maxlength="30" placeholder="Full name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="Email" placeholder="Email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" maxlength="500" placeholder="Enter text here" required></textarea>
         <button class="form-btn" type="submit" name="button">Get in touch</button>
       </form>
     </section>

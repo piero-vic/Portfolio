@@ -93,6 +93,11 @@ footer {
   padding: 24px;
 }
 
+label {
+  visibility: hidden;
+  position: absolute;
+}
+
 /* LAYOUT RULES */
 .d-flex {
   display: flex;
