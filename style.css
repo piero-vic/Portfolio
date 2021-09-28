@@ -93,7 +93,7 @@ footer {
   padding: 24px;
 }
 
-label {
+.sr-only {
   visibility: hidden;
   position: absolute;
 }
