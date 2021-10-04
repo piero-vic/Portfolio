@@ -22,9 +22,11 @@
     <!-- Header Section -->
     <header class="header-bar d-flex">
       <a class="header-title" href="#">Piero Lescano</a>
+      <a class="menu-button" href="#" onclick="toggle()">
+        <img id="hamburger-btn" src="assets/hamburger.svg" alt="">
+      </a>
       <nav class="nav-menu">
-        <a class="menu-button" href="#"><img src="assets/hamburger.svg" alt=""></a>
-        <ul class="nav-list">
+        <ul id="nav-list" class="nav-list">
           <li>
             <a class="nav-link" href="#work-section">Portfolio</a>
           </li>
@@ -39,6 +41,17 @@
           </li>
         </ul>
       </nav>
+      <ul id="mobile-nav-list" class="mobile-nav-list">
+        <li>
+          <a class="mobile-nav-link" href="#work-section">Portfolio</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="#about-section">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
     </header>
 
     <!-- Hero Section -->
@@ -199,5 +212,6 @@
       </ul>
     </footer>
 
+    <script src="index.js"></script>
   </body>
 </html>
