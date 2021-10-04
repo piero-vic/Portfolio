@@ -162,6 +162,9 @@ footer {
 
 .mobile-nav-list {
   display: none;
+  padding: 50px 24px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .toggle-navbar {
@@ -172,12 +175,6 @@ footer {
   top: 0;
   width: 100%;
   height: 100vh;
-}
-
-.mobile-nav-list {
-  padding: 50px 24px;
-  font-size: 32px;
-  font-weight: 700;
 }
 
 .mobile-nav-list li {
