@@ -2,6 +2,7 @@
 node_modules
 .hintrc
 .stylelintrc.json
+.eslintrc.json
 package-lock.json
 package.json
 .DS_Store
