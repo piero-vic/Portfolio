@@ -93,6 +93,11 @@ footer {
   padding: 24px;
 }
 
+.sr-only {
+  visibility: hidden;
+  position: absolute;
+}
+
 /* LAYOUT RULES */
 .d-flex {
   display: flex;
@@ -196,6 +201,30 @@ footer {
   max-width: 50vw;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(-8deg);
+  }
+
+  66% {
+    transform: rotate(8deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.icon-link:hover {
+  animation-duration: 0.2s;
+  animation-name: rotate;
+  animation-timing-function: linear;
 }
 
 #work-section {
