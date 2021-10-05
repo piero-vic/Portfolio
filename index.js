@@ -48,3 +48,31 @@ let projects = [
     repoLink: "https://github.com/piero-vic/patches"
   }
 ]
+
+function createCard() {
+  const workSection = document.getElementById('work-section');
+  // Card
+  const card = document.createElement('div');
+  card.classList = 'd-flex card';
+  workSection.appendChild(card);
+  // Title
+  const cardTitle = document.createElement('h3');
+  cardTitle.classList = 'card-title';
+  card.appendChild(cardTitle);
+  // Text
+  const cardText = document.createElement('p');
+  cardText.classList = 'card-text';
+  card.appendChild(cardText);
+  // List
+  const cardList = document.createElement('ul');
+  cardList.classList = 'tag-container';
+  const listItem = document.createElement('li');    // Iterate over technologies
+  listItem.classList = 'card-tag';                  // to create many tags
+  cardList.appendChild(listItem);
+  card.appendChild(cardList);
+  // Button
+  const cardButton = document.createElement('button');
+  cardButton.classList = 'card-button';
+  cardButton.setAttribute('type', 'button');
+  card.appendChild(cardButton);
+}
