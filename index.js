@@ -65,8 +65,13 @@ const projects = [
   },
 ];
 
-function openProject(project) {
+// Card Toggle
+function toggleCard() {
   const modal = document.getElementById('modal-container');
+  modal.classList.toggle('modal-toggle');
+}
+
+function openProject(project) {
   document.getElementById('modal-title').innerHTML = project.name;
   const modalList = document.getElementById('modal-list');
   modalList.innerHTML = '';
@@ -78,7 +83,9 @@ function openProject(project) {
   });
   document.getElementById('modal-img').setAttribute('src', project.image);
   document.getElementById('modal-text').innerHTML = project.description;
-  document.getElementById('modal-button').addEventListener('click', project.openLink);
+  document.getElementById('modal-button').addEventListener('click', () => {
+      project.openLink()
+  });
   const cancelButton = document.getElementById('cancel-button');
   cancelButton.addEventListener('click', toggleCard);
   toggleCard();
@@ -119,7 +126,7 @@ function createMainCard(project) {
   cardButton.classList = 'main-card-button';
   cardButton.setAttribute('type', 'button');
   cardButton.addEventListener('click', () => {
-    openProject(project)
+    openProject(project);
   });
   cardTextContainer.appendChild(cardButton);
 }
@@ -151,19 +158,13 @@ function createCard(project) {
   cardButton.classList = 'card-button';
   cardButton.setAttribute('type', 'button');
   cardButton.addEventListener('click', () => {
-    openProject(project)
+    openProject(project);
   });
   card.appendChild(cardButton);
 }
 
-// Card Toggle
-function toggleCard() {
-  const modal = document.getElementById('modal-container');
-  modal.classList.toggle('modal-toggle');
-}
-
 // Fill webpage
-createMainCard(projects[0])
-createCard(projects[1])
-createCard(projects[2])
-createCard(projects[3])
+createMainCard(projects[0]);
+createCard(projects[1]);
+createCard(projects[2]);
+createCard(projects[3]);
