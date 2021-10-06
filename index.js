@@ -172,17 +172,14 @@ createCard(projects[3]);
 // Validation
 const form = document.getElementById('contact-form')
 form.addEventListener('submit', (event) => {
+  const email = document.getElementById('email').value
+  const emailRegEx = new RegExp('^[a-z0-9-]+@[a-z0-9-]+\.[a-z0-9-.]+$');
+
+  if (!email.includes('@')) {
     event.preventDefault();
-    const name = document.getElementById('name').value
-    const email = document.getElementById('email').value
-    const emailRegEx = new RegExp('^[a-z0-9-]+@[a-z0-9-]+\.[a-z0-9-.]+$');
-    const message = document.getElementById('message').value
-
-    const nameValidation = name.length !== 0;
-    const emailValidation = emailRegEx.test(email);
-    const messageValidation = message.length !== 0;
-
-    console.log(nameValidation);
-    console.log(emailValidation);
-    console.log(messageValidation);
+    document.getElementById('error-message').innerHTML = 'submit a valid email'
+  } else if (!emailRegEx.test(email)) {
+    event.preventDefault();
+    document.getElementById('error-message').innerHTML = 'email should be lowercase'
+  }
 });
