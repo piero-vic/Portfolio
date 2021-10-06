@@ -136,3 +136,11 @@ function createCard(project) {
 
   return card;
 }
+
+function toggleCard() {
+  const modal = document.getElementById('modal-container')
+  modal.classList.toggle('modal-toggle')
+}
+
+const cancelButton = document.getElementById('cancel-button');
+cancelButton.addEventListener('click', toggleCard)

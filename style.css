@@ -369,6 +369,7 @@ footer {
 
 /* MODAL */
 .modal-container {
+  visibility: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
   position: fixed;
@@ -380,6 +381,10 @@ footer {
   box-sizing: border-box;
   display: grid;
   align-items: center;
+}
+
+.modal-toggle {
+  visibility: visible;
 }
 
 .modal {
