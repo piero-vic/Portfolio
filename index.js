@@ -27,8 +27,8 @@ const projects = [
     repoLink: 'https://github.com/piero-vic/Portfolio',
     cardId: 0,
     openLink() {
-      window.open(this.repoLink , '_blank');
-    }
+      window.open(this.repoLink, '_blank');
+    },
   },
   {
     name: 'crypto-prices',
@@ -38,8 +38,8 @@ const projects = [
     repoLink: 'https://github.com/piero-vic/crypto-prices',
     cardId: 1,
     openLink() {
-      window.open(this.repoLink , '_blank');
-    }
+      window.open(this.repoLink, '_blank');
+    },
   },
   {
     name: 'bootstrap-website',
@@ -49,8 +49,8 @@ const projects = [
     repoLink: 'https://github.com/piero-vic/bootstrap-website',
     cardId: 2,
     openLink() {
-      window.open(this.repoLink , '_blank');
-    }
+      window.open(this.repoLink, '_blank');
+    },
   },
   {
     name: 'Patches: A Collection of VCV Rack Patches',
@@ -60,112 +60,14 @@ const projects = [
     repoLink: 'https://github.com/piero-vic/patches',
     cardId: 3,
     openLink() {
-      window.open(this.repoLink , '_blank');
-    }
+      window.open(this.repoLink, '_blank');
+    },
   },
 ];
 
-function createMainCard(project) {
-  const workSection = document.getElementById('work-section');
-  // Card
-  const card = document.createElement('div');
-  card.classList = 'd-grid main-card';
-  workSection.appendChild(card);
-  // Image
-  const cardImage = document.createElement('img');
-  cardImage.classList = 'main-card-img';
-  cardImage.setAttribute('src', project.image);
-  cardImage.setAttribute('alt', 'Portfolio Website thumbnail');
-  card.appendChild(cardImage);
-  // Text Container
-  const cardTextContainer = document.createElement('div');
-  cardTextContainer.classList = 'd-flex main-card-text-container';
-  card.appendChild(cardTextContainer);
-  // Title
-  const cardTitle = document.createElement('h3');
-  cardTitle.innerHTML = project.name;
-  cardTitle.classList = 'main-card-title';
-  cardTextContainer.appendChild(cardTitle);
-  // Text
-  const cardText = document.createElement('p');
-  cardText.innerHTML = project.description;
-  cardText.classList = 'main-card-text';
-  cardTextContainer.appendChild(cardText);
-  // List
-  const cardList = document.createElement('ul');
-  cardList.classList = 'd-flex main-tag-container';
-  // List elements
-  project.technologies.forEach((item) => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = item;
-    listItem.classList = 'main-card-tag';
-    cardList.appendChild(listItem);
-  });
-  cardTextContainer.appendChild(cardList);
-  // Button
-  const cardButton = document.createElement('button');
-  cardButton.innerHTML = 'See Project';
-  cardButton.classList = 'main-card-button';
-  cardButton.setAttribute('type', 'button');
-  cardTextContainer.appendChild(cardButton);
-
-  return card;
-}
-
-function createCard(project) {
-  const workSection = document.getElementById('work-section');
-  // Card
-  const card = document.createElement('div');
-  card.classList = `d-flex card card-${project.cardId}`;
-  workSection.appendChild(card);
-  // Title
-  const cardTitle = document.createElement('h3');
-  cardTitle.innerHTML = project.name;
-  cardTitle.classList = 'card-title';
-  card.appendChild(cardTitle);
-  // Text
-  const cardText = document.createElement('p');
-  cardText.innerHTML = project.description;
-  cardText.classList = 'card-text';
-  card.appendChild(cardText);
-  // List
-  const cardList = document.createElement('ul');
-  cardList.classList = 'tag-container';
-  // List elements
-  project.technologies.forEach((item) => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = item;
-    listItem.classList = 'card-tag';
-    cardList.appendChild(listItem);
-  });
-  card.appendChild(cardList);
-  // Button
-  const cardButton = document.createElement('button');
-  cardButton.innerHTML = 'See Project';
-  cardButton.classList = 'card-button';
-  cardButton.setAttribute('type', 'button');
-  card.appendChild(cardButton);
-
-  return card;
-}
-
-
-// Card Toggle
-function toggleCard() {
-  const modal = document.getElementById('modal-container')
-  modal.classList.toggle('modal-toggle')
-}
-
-const cancelButton = document.getElementById('cancel-button');
-cancelButton.addEventListener('click', toggleCard)
-
-// Open Project
 function openProject(project) {
-  // Fill Modal
   const modal = document.getElementById('modal-container');
-  // Title
   document.getElementById('modal-title').innerHTML = project.name;
-  // Tags
   const modalList = document.getElementById('modal-list');
   modalList.innerHTML = '';
   project.technologies.forEach((item) => {
@@ -174,14 +76,94 @@ function openProject(project) {
     listItem.classList = 'modal-tag';
     modalList.appendChild(listItem);
   });
-  // Image
   document.getElementById('modal-img').setAttribute('src', project.image);
-  // Description
   document.getElementById('modal-text').innerHTML = project.description;
-  // Button
   document.getElementById('modal-button').addEventListener('click', project.openLink);
-  // Toggle Card
-  toggleCard()
-
-  return modal
+  const cancelButton = document.getElementById('cancel-button');
+  cancelButton.addEventListener('click', toggleCard);
+  toggleCard();
 }
+
+function createMainCard(project) {
+  const workSection = document.getElementById('work-section');
+  const card = document.createElement('div');
+  card.classList = 'd-grid main-card';
+  workSection.appendChild(card);
+  const cardImage = document.createElement('img');
+  cardImage.classList = 'main-card-img';
+  cardImage.setAttribute('src', project.image);
+  cardImage.setAttribute('alt', 'Portfolio Website thumbnail');
+  card.appendChild(cardImage);
+  const cardTextContainer = document.createElement('div');
+  cardTextContainer.classList = 'd-flex main-card-text-container';
+  card.appendChild(cardTextContainer);
+  const cardTitle = document.createElement('h3');
+  cardTitle.innerHTML = project.name;
+  cardTitle.classList = 'main-card-title';
+  cardTextContainer.appendChild(cardTitle);
+  const cardText = document.createElement('p');
+  cardText.innerHTML = project.description;
+  cardText.classList = 'main-card-text';
+  cardTextContainer.appendChild(cardText);
+  const cardList = document.createElement('ul');
+  cardList.classList = 'd-flex main-tag-container';
+  project.technologies.forEach((item) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = item;
+    listItem.classList = 'main-card-tag';
+    cardList.appendChild(listItem);
+  });
+  cardTextContainer.appendChild(cardList);
+  const cardButton = document.createElement('button');
+  cardButton.innerHTML = 'See Project';
+  cardButton.classList = 'main-card-button';
+  cardButton.setAttribute('type', 'button');
+  cardButton.addEventListener('click', () => {
+    openProject(project)
+  });
+  cardTextContainer.appendChild(cardButton);
+}
+
+function createCard(project) {
+  const workSection = document.getElementById('work-section');
+  const card = document.createElement('div');
+  card.classList = `d-flex card card-${project.cardId}`;
+  workSection.appendChild(card);
+  const cardTitle = document.createElement('h3');
+  cardTitle.innerHTML = project.name;
+  cardTitle.classList = 'card-title';
+  card.appendChild(cardTitle);
+  const cardText = document.createElement('p');
+  cardText.innerHTML = project.description;
+  cardText.classList = 'card-text';
+  card.appendChild(cardText);
+  const cardList = document.createElement('ul');
+  cardList.classList = 'tag-container';
+  project.technologies.forEach((item) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = item;
+    listItem.classList = 'card-tag';
+    cardList.appendChild(listItem);
+  });
+  card.appendChild(cardList);
+  const cardButton = document.createElement('button');
+  cardButton.innerHTML = 'See Project';
+  cardButton.classList = 'card-button';
+  cardButton.setAttribute('type', 'button');
+  cardButton.addEventListener('click', () => {
+    openProject(project)
+  });
+  card.appendChild(cardButton);
+}
+
+// Card Toggle
+function toggleCard() {
+  const modal = document.getElementById('modal-container');
+  modal.classList.toggle('modal-toggle');
+}
+
+// Fill webpage
+createMainCard(projects[0])
+createCard(projects[1])
+createCard(projects[2])
+createCard(projects[3])
