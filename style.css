@@ -408,6 +408,7 @@ footer {
   font-family: 'Roboto', serif;
   color: #172b4d;
   font-size: 32px;
+  padding-top: 5px;
 }
 
 .modal-tags-container {

@@ -26,6 +26,9 @@ const projects = [
     image: 'desktop-screenshot.png',
     repoLink: 'https://github.com/piero-vic/Portfolio',
     cardId: 0,
+    openLink() {
+      window.open(this.repoLink , '_blank');
+    }
   },
   {
     name: 'crypto-prices',
@@ -34,6 +37,9 @@ const projects = [
     image: 'assets/crypto.jpeg',
     repoLink: 'https://github.com/piero-vic/crypto-prices',
     cardId: 1,
+    openLink() {
+      window.open(this.repoLink , '_blank');
+    }
   },
   {
     name: 'bootstrap-website',
@@ -42,6 +48,9 @@ const projects = [
     image: 'assets/bootstrap-webpage.png',
     repoLink: 'https://github.com/piero-vic/bootstrap-website',
     cardId: 2,
+    openLink() {
+      window.open(this.repoLink , '_blank');
+    }
   },
   {
     name: 'Patches: A Collection of VCV Rack Patches',
@@ -50,6 +59,9 @@ const projects = [
     image: 'assets/synth-unsplash.jpeg',
     repoLink: 'https://github.com/piero-vic/patches',
     cardId: 3,
+    openLink() {
+      window.open(this.repoLink , '_blank');
+    }
   },
 ];
 
@@ -137,6 +149,8 @@ function createCard(project) {
   return card;
 }
 
+
+// Card Toggle
 function toggleCard() {
   const modal = document.getElementById('modal-container')
   modal.classList.toggle('modal-toggle')
@@ -144,3 +158,30 @@ function toggleCard() {
 
 const cancelButton = document.getElementById('cancel-button');
 cancelButton.addEventListener('click', toggleCard)
+
+// Open Project
+function openProject(project) {
+  // Fill Modal
+  const modal = document.getElementById('modal-container');
+  // Title
+  document.getElementById('modal-title').innerHTML = project.name;
+  // Tags
+  const modalList = document.getElementById('modal-list');
+  modalList.innerHTML = '';
+  project.technologies.forEach((item) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = item;
+    listItem.classList = 'modal-tag';
+    modalList.appendChild(listItem);
+  });
+  // Image
+  document.getElementById('modal-img').setAttribute('src', project.image);
+  // Description
+  document.getElementById('modal-text').innerHTML = project.description;
+  // Button
+  document.getElementById('modal-button').addEventListener('click', project.openLink);
+  // Toggle Card
+  toggleCard()
+
+  return modal
+}
