@@ -553,6 +553,12 @@ footer {
   gap: 24px;
 }
 
+#error-message {
+  display: none;
+  color: red;
+  text-align: center;
+}
+
 /* Media Queries */
 @media screen and (min-width: 1024px) {
   /* Header Section Media Queries */
@@ -731,5 +737,9 @@ footer {
 
   .contact-grid-item-2 {
     grid-column: 2 / span 1;
+  }
+
+  #error-message {
+    text-align: left;
   }
 }

@@ -168,3 +168,22 @@ createMainCard(projects[0]);
 createCard(projects[1]);
 createCard(projects[2]);
 createCard(projects[3]);
+
+// Validation
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+  // Email
+  const email = document.getElementById('email').value;
+  const emailRegEx = new RegExp('^[a-z0-9-]+@[a-z0-9-]+.[a-z0-9-.]+$');
+
+  const errorMessage = document.getElementById('error-message');
+  if (!email.includes('@')) {
+    event.preventDefault();
+    errorMessage.innerHTML = 'Please submit a valid email';
+    errorMessage.style.display = 'block';
+  } else if (!emailRegEx.test(email)) {
+    event.preventDefault();
+    errorMessage.innerHTML = 'Please write the email in lowercase';
+    errorMessage.style.display = 'block';
+  }
+});
