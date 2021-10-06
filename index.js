@@ -96,7 +96,7 @@ function createMainCard(project) {
   cardButton.classList = 'main-card-button';
   cardButton.setAttribute('type', 'button');
   cardTextContainer.appendChild(cardButton);
-  
+
   return card;
 }
 
