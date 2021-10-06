@@ -168,3 +168,21 @@ createMainCard(projects[0]);
 createCard(projects[1]);
 createCard(projects[2]);
 createCard(projects[3]);
+
+// Validation
+const form = document.getElementById('contact-form')
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const emailRegEx = new RegExp('^[a-z0-9-]+@[a-z0-9-]+\.[a-z0-9-.]+$');
+    const message = document.getElementById('message').value
+
+    const nameValidation = name.length !== 0;
+    const emailValidation = emailRegEx.test(email);
+    const messageValidation = message.length !== 0;
+
+    console.log(nameValidation);
+    console.log(emailValidation);
+    console.log(messageValidation);
+});
