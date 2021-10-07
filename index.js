@@ -187,3 +187,21 @@ form.addEventListener('submit', (event) => {
     errorMessage.style.display = 'block';
   }
 });
+
+const data = {
+  name: document.getElementById('name'),
+  email: document.getElementById('email')
+}
+
+function getInput() {
+  localStorage.setItem('name', data.name.value)
+  localStorage.setItem('email', data.email.value)
+
+}
+
+for (item in data) {
+  data[item].setAttribute('oninput', 'getInput()')
+}
+
+data.name.setAttribute('value', localStorage.getItem('name'));
+data.email.setAttribute('value', localStorage.getItem('email'));
