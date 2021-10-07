@@ -188,20 +188,22 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const data = {
+// Local Storage
+const formData = {
   name: document.getElementById('name'),
-  email: document.getElementById('email')
-}
+  email: document.getElementById('email'),
+};
 
 function getInput() {
-  localStorage.setItem('name', data.name.value)
-  localStorage.setItem('email', data.email.value)
-
+  localStorage.setItem('name', formData.name.value);
+  localStorage.setItem('email', formData.email.value);
 }
 
-for (item in data) {
-  data[item].setAttribute('oninput', 'getInput()')
+for (item in formData) {
+  formData[item].setAttribute('oninput', 'getInput()');
 }
 
-data.name.setAttribute('value', localStorage.getItem('name'));
-data.email.setAttribute('value', localStorage.getItem('email'));
+if (localStorage.getItem('name') && localStorage.getItem('email')) {
+  formData.name.setAttribute('value', localStorage.getItem('name'));
+  formData.email.setAttribute('value', localStorage.getItem('email'));
+}
