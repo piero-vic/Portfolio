@@ -187,3 +187,23 @@ form.addEventListener('submit', (event) => {
     errorMessage.style.display = 'block';
   }
 });
+
+// Local Storage
+const formInputs = form.querySelectorAll('#name, #email');
+
+function getInput() {
+  localStorage.setItem('name', formInputs[0].value);
+  localStorage.setItem('email', formInputs[1].value);
+}
+
+formInputs.forEach((input) => {
+  input.addEventListener('input', getInput);
+});
+
+if (localStorage.getItem('name')) {
+  formInputs[0].setAttribute('value', localStorage.getItem('name'));
+}
+
+if (localStorage.getItem('email')) {
+  formInputs[1].setAttribute('value', localStorage.getItem('email'));
+}
