@@ -200,10 +200,5 @@ formInputs.forEach((input) => {
   input.addEventListener('input', getInput);
 });
 
-if (localStorage.getItem('name')) {
-  formInputs[0].setAttribute('value', localStorage.getItem('name'));
-}
-
-if (localStorage.getItem('email')) {
-  formInputs[1].setAttribute('value', localStorage.getItem('email'));
-}
+formInputs[0].setAttribute('value', localStorage.getItem('name'));
+formInputs[1].setAttribute('value', localStorage.getItem('email'));
