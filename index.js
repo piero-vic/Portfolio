@@ -25,9 +25,13 @@ const projects = [
     technologies: ['HTML', 'CSS'],
     image: 'desktop-screenshot.png',
     repoLink: 'https://github.com/piero-vic/Portfolio',
+    demoLink: 'https://piero-vic.github.io/Portfolio',
     cardId: 0,
-    openLink() {
+    openRepoLink() {
       window.open(this.repoLink, '_blank');
+    },
+    openDemoLink() {
+      window.open(this.demoLink, '_blank');
     },
   },
   {
@@ -36,8 +40,9 @@ const projects = [
     technologies: ['Python', 'Ledger CLI', 'CoinGecko API'],
     image: 'assets/crypto.jpeg',
     repoLink: 'https://github.com/piero-vic/crypto-prices',
+    demoLink: null,
     cardId: 1,
-    openLink() {
+    openRepoLink() {
       window.open(this.repoLink, '_blank');
     },
   },
@@ -47,9 +52,13 @@ const projects = [
     technologies: ['HTML', 'Bootstrap'],
     image: 'assets/bootstrap-webpage.png',
     repoLink: 'https://github.com/piero-vic/bootstrap-website',
+    demoLink: 'https://piero-vic.github.io/bootstrap-website',
     cardId: 2,
-    openLink() {
+    openRepoLink() {
       window.open(this.repoLink, '_blank');
+    },
+    openDemoLink() {
+      window.open(this.demoLink, '_blank');
     },
   },
   {
@@ -58,9 +67,25 @@ const projects = [
     technologies: ['JSON', 'VCV Rack'],
     image: 'assets/synth-unsplash.jpeg',
     repoLink: 'https://github.com/piero-vic/patches',
+    demoLink: null,
     cardId: 3,
-    openLink() {
+    openRepoLink() {
       window.open(this.repoLink, '_blank');
+    },
+  },
+  {
+    name: 'Minimal Todo List',
+    description: 'A minimal and simple To-do list application. Build for the Microverse program.',
+    technologies: ['JavaScript', 'Webpack'],
+    image: 'assets/to-do-list-screenshot.png',
+    repoLink: 'https://github.com/piero-vic/to-do-list',
+    demoLink: 'https://piero-vic.github.io/to-do-list/dist/',
+    cardId: 4,
+    openRepoLink() {
+      window.open(this.repoLink, '_blank');
+    },
+    openDemoLink() {
+      window.open(this.demoLink, '_blank');
     },
   },
 ];
@@ -83,9 +108,17 @@ function openProject(project) {
   });
   document.getElementById('modal-img').setAttribute('src', project.image);
   document.getElementById('modal-text').innerHTML = project.description;
-  document.getElementById('modal-button').addEventListener('click', () => {
-    project.openLink();
-  });
+  document.getElementById('source-button').addEventListener('click', () => project.openRepoLink());
+
+  const demoButton = document.getElementById('demo-button');
+
+  if (project.demoLink === null) {
+    demoButton.style.display = 'none';
+  } else {
+    demoButton.style.display = 'inline';
+    demoButton.addEventListener('click', () => project.openDemoLink());
+  }
+
   const cancelButton = document.getElementById('cancel-button');
   cancelButton.addEventListener('click', toggleCard);
   toggleCard();
@@ -168,6 +201,7 @@ createMainCard(projects[0]);
 createCard(projects[1]);
 createCard(projects[2]);
 createCard(projects[3]);
+createCard(projects[4]);
 
 // Validation
 const form = document.getElementById('contact-form');
