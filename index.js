@@ -110,9 +110,9 @@ function openProject(project) {
   document.getElementById('modal-text').innerHTML = project.description;
   document.getElementById('source-button').addEventListener('click', () => project.openRepoLink());
 
-  const demoButton = document.getElementById('demo-button')
+  const demoButton = document.getElementById('demo-button');
 
-  if(project.demoLink === null) {
+  if (project.demoLink === null) {
     demoButton.style.display = 'none';
   } else {
     demoButton.style.display = 'inline';
