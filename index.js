@@ -63,6 +63,17 @@ const projects = [
       window.open(this.repoLink, '_blank');
     },
   },
+  {
+    name: 'Minimal Todo List',
+    description: 'A minimal and simple To-do list application. Build for the Microverse program.',
+    technologies: ['JavaScript', 'Webpack'],
+    image: 'assets/to-do-list-screenshot.png',
+    repoLink: 'https://github.com/piero-vic/to-do-list',
+    cardId: 4,
+    openLink() {
+      window.open(this.repoLink, '_blank');
+    },
+  },
 ];
 
 // Card Toggle
@@ -168,6 +179,7 @@ createMainCard(projects[0]);
 createCard(projects[1]);
 createCard(projects[2]);
 createCard(projects[3]);
+createCard(projects[4]);
 
 // Validation
 const form = document.getElementById('contact-form');

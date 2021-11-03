@@ -328,6 +328,11 @@ footer {
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(assets/synth-unsplash.jpeg);
 }
 
+.card-4 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(assets/to-do-list-screenshot.png);
+  background-position: 50%;
+}
+
 .card {
   flex-direction: column;
   align-items: flex-start;
@@ -664,6 +669,11 @@ footer {
 
   .card-3:hover {
     background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0) 84%), url(assets/synth-unsplash.jpeg);
+  }
+
+  .card-4:hover {
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0) 84%), url(assets/to-do-list-screenshot.png);
+    background-position: 50%;
   }
 
   .card:hover {
